@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
     int end_port = atoi(argv[3]);
 
     if (start_port < 1 || end_port > 8080 || start_port > end_port) {  // scans the first 8080 ports, can be adjusted
-        printf("Invalid port range. Please provide a range between 1 and 8080\n");
+        printf("Invalid port range\n");
         return 1;
     }
     printf("Scanning ports on %s from %d to %d\n", ip, start_port, end_port);
